@@ -1,0 +1,15 @@
+<h2>Analytics</h2>
+<div class="container">
+    <div class="p-5">
+        <div class="card">
+                <%@analytics.each do |analytic|%>
+					<div class="card-body">
+                        <p><%= analytic.original_url %></p>
+                        <p><%= analytic.shorten_url %></p>
+                        <p> Total clicks : <%= analytic.click_count %></p>
+                        <p> Top countries : <%= analytic.country %> <%= analytic.state %> <%= analytic.city %></p>
+                    </div>
+				<%end%>
+        </div>
+    </div>
+</div>

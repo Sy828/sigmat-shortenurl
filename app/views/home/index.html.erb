@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="p-5">
+        <div class="card">
+            <div class="card-body">
+                <%= form_with model: @link,remote: true do |f| %>
+                    <h5 class='card-title'>Enter a URL to shorten</h5>
+                    <%= f.text_field :original_url, class: "form-control", placeholder: "Enter URL.." %>
+                    <%= f.submit "Shorten", class: "btn btn-primary mt-2" %>
+                <%end%>
+
+                <div id="short-link">
+
+                </div>
+                <br><br>
+                 <div class="card-body">
+                   <button class= "btn btn-primary mt-2" onclick="location.href = '/home/stats';" >Analytics</button>
+                 </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

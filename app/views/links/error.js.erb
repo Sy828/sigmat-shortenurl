@@ -1,0 +1,3 @@
+var message = "<%= @link.errors.full_messages.join(".") << '-' %>";
+var elem = document.getElementById('short-link');
+elem.innerHTML = message;
