@@ -4,14 +4,14 @@
         <div class="card">
                 <%@analytics.each do |analytic|%>
 					<div class="card-body">
-                        <p><%= analytic.original_url %></p>
+                       <p><%= analytic.original_url %></p>
                         <p><%= analytic.shorten_url %></p>
-                        <p> Total clicks : <%= analytic.click_count %></p>
-                        <p> Top countries : <%= analytic.country %></p>
-                        <p> Top state : <%= analytic.state %></p>
-                        <p> Top city : <%= analytic.city %></p>
+                        <p> Total clicks : <%= analytic.no_click %></p>
+                        <p> Top countries : <%= analytic.countries %></p>
+                        <p> Top state : <%= analytic.states %></p>
+                        <p> Top city : <%= analytic.cities %></p>
                     </div>
-				<%end%>
+		<%end%>
         </div>
     </div>
 </div>
