@@ -1,4 +1,4 @@
-# Rails Assignment - Splitwise
+# Rails Assignment - Shortenurl
 
 ## Setup
 - Fork the repository. 
