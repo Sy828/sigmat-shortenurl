@@ -20,4 +20,5 @@ class Link < ApplicationRecord
         .select("*,('#{baseUrl}' || '/' || links.lookup_code) as shorten_url")
         .order("links.id desc")
     end
+
 end

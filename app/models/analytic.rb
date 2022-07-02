@@ -1,6 +1,6 @@
 class Analytic < ApplicationRecord
     validates_presence_of :link_id
-    validates_uniqueness_of :link_id
+    #validates_uniqueness_of :link_id
 
     def self.insert_update_analytic_data(linkid,ip,city,country,state)
         self.create(link_id: linkid, ip: ip,state: state, country: country,city: city, click_count: 1)
