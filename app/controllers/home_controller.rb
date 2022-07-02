@@ -4,7 +4,6 @@ class HomeController < ApplicationController
   end
 
   def stats
-    debugger
     @analytics = Link.fetch_analytics_data(request.base_url)
   end
 end
